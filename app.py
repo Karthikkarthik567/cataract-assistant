@@ -20,7 +20,7 @@ st.caption("AI-powered cataract screening with advanced AI Q&A and medical knowl
 # ============================
 @st.cache_resource
 def get_model():
-    return load_model("model/best_model.pt")
+   return load_model("best_model.pt")
 
 model_bundle = get_model()
 
