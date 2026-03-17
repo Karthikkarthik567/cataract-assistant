@@ -7,6 +7,7 @@
 
 > 🚀 **AI-powered cataract detection assistant** combining **YOLOv8 deep learning** with a **semantic search pipeline inspired by Endee vector database** for intelligent medical Q&A.
 
+This project integrates Endee-inspired semantic search concepts and follows vector database retrieval workflows similar to Endee.
 ---
 
 ## 🎯 Project Overview
