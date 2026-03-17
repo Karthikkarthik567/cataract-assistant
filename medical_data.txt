@@ -1,0 +1,21 @@
+overview: Cataract is a medical condition where the natural lens of the eye becomes cloudy. This cloudiness blocks light from passing clearly to the retina, causing blurry or dim vision. Cataracts usually develop slowly and are one of the leading causes of vision impairment worldwide.
+
+symptoms: Blurry or cloudy vision; Sensitivity to bright lights; Difficulty seeing at night; Seeing halos around lights; Faded or yellowish colors; Frequent changes in eyeglass prescription
+
+early_signs: Slightly blurred vision; Difficulty focusing; Sensitivity to glare; Faded or yellowish color perception; Trouble seeing at night
+
+risk_factors: Aging (most common cause); Diabetes; Smoking; Excessive sunlight exposure (UV radiation); Eye injuries; Long-term steroid medication use; Family history of cataract
+
+diagnosis: Eye doctors diagnose cataracts using several eye examinations: Visual acuity test; Slit-lamp examination; Retinal examination; Eye pressure test
+
+treatment: The most effective treatment for cataracts is surgery. During cataract surgery, the cloudy lens is removed and replaced with an artificial intraocular lens (IOL). The procedure is safe, usually takes less than 30 minutes, and restores clear vision.
+
+prevention: Although cataracts cannot always be prevented, the risk can be reduced by: Wearing UV-protection sunglasses; Eating antioxidant-rich foods; Controlling diabetes; Avoiding smoking; Regular eye checkups
+
+lifestyle_tips: Maintain a balanced diet rich in vitamins and antioxidants; Protect eyes from UV light; Avoid smoking and excessive alcohol; Regularly monitor blood sugar if diabetic; Schedule routine eye examinations
+
+night_vision_effects: Cataracts can cause difficulty seeing in low light or at night, glare from headlights, halos around lights, and poor contrast perception.
+
+complications: Untreated cataracts can lead to severe vision impairment and increase the risk of falls, accidents, and reduced quality of life.
+
+surgery_details: Cataract surgery involves removing the cloudy natural lens and replacing it with an artificial lens. It is usually done under local anesthesia and patients often regain vision within a few days.
