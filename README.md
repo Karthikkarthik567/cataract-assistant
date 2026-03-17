@@ -58,21 +58,16 @@ Users can upload eye images, receive AI-based diagnosis, and ask natural languag
 
 ---
 
-## 🏗️ System Architecture
-
-
 User Input (Image / Question)
-↓
-Streamlit Web Interface
-↓
-┌──────────────────────┬─────────────────────────┐
-│ YOLOv8 Model │ Semantic Search Engine │
-│ (Image Detection) │ (Embeddings + Similarity)│
-└──────────────────────┴─────────────────────────┘
-↓
-Diagnosis + AI Response + Recommendations
-
-
+        ↓
+Streamlit Frontend
+        ↓
+ ┌───────────────┬────────────────┐
+ │ YOLOv8 Model  │ Endee Vector DB │
+ │ (Detection)   │ (Semantic Q&A)  │
+ └───────────────┴────────────────┘
+        ↓
+Results + Recommendations
 ---
 
 ## 🧠 Semantic Search (Endee-Inspired Design)
@@ -102,20 +97,16 @@ This project implements a **semantic retrieval pipeline inspired by Endee vector
 
 ---
 
-## 📂 Project Structure
-
-
 cataract-assistant/
 │
-├── app.py # Streamlit UI & app logic
-├── model_utils.py # YOLO model utilities
-├── vector_db/
-│ └── endee_setup.py # Semantic search module
-├── medical_data.txt # Medical knowledge base
-├── requirements.txt # Dependencies
-├── temp/ # Temporary images
-├── docs/ # Screenshots / demo
-└── README.md
+├── app.py
+├── model_utils.py
+├── endee_setup.py
+├── medical_data.txt
+├── requirements.txt
+├── README.md
+├── temp/
+└── docs/
 
 
 ---
