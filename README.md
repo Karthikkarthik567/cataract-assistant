@@ -123,4 +123,21 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run app
-streamlit run app.pylit run app.py
+streamlit run app.py
+## 📸 Demo
+
+### 🔹 Upload Interface
+![Upload](docs/upload.png)
+
+### 🔹 Detection Result
+![Result](docs/result.png)
+
+### 🔹 AI Q&A Interface
+![QA](docs/qa.png)
+
+## 🧪 Use Cases
+
+- 🏥 Early cataract screening in rural areas  
+- 📱 Telemedicine and remote diagnosis  
+- 🎓 Medical student training and education  
+- 🤖 AI-powered healthcare assistants  
