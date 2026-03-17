@@ -5,7 +5,7 @@ import numpy as np
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 def load_data():
-    with open("data/medical_data.txt","r") as f:
+   with open("medical_data.txt","r") as f:
         texts = f.readlines()
 
     embeddings = model.encode(texts)
