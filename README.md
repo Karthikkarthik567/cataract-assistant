@@ -126,14 +126,16 @@ pip install -r requirements.txt
 streamlit run app.py
 ## 📸 Demo
 
+## 📸 Demo
+
 ### 🔹 Upload Interface
-![Upload](docs/upload.png)
+![Upload](upload.png)
 
 ### 🔹 Detection Result
-![Result](docs/result.png)
+![Result](result.png)
 
 ### 🔹 AI Q&A Interface
-![QA](docs/qa.png)
+![QA](qa.png)
 
 ## 🧪 Use Cases
 
