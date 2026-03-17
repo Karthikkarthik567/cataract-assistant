@@ -16,7 +16,7 @@ This project integrates Endee-inspired semantic search concepts and follows vect
 ## 🔗 Endee Repository
 - Original Repo: https://github.com/endee-io/endee
 - This project uses Endee as the vector database for semantic search.
-- 
+  
 ## 🎯 Project Overview
 
 The **AI Cataract Diagnosis Assistant** is an end-to-end AI application designed for:
