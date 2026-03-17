@@ -47,21 +47,20 @@ Users can upload eye images, receive AI-based diagnosis, and ask natural languag
 - Ensures reliable answers
 
 ---
-
 ## 🏗️ System Architecture
 
+```
 User Input (Image / Question)
-↓
+        ↓
 Streamlit Frontend
-↓
-┌──────────────────────┬──────────────────────────┐
-│ YOLOv8 Model │ Semantic Search Engine │
-│ (Image Detection) │ (Embeddings + Similarity)│
-└──────────────────────┴──────────────────────────┘
-↓
+        ↓
+ ┌──────────────────────┬──────────────────────────┐
+ │ YOLOv8 Model         │ Semantic Search Engine   │
+ │ (Image Detection)    │ (Embeddings + Similarity)│
+ └──────────────────────┴──────────────────────────┘
+        ↓
 Diagnosis + AI Response + Recommendations
----
-
+```
 ## 🧠 Semantic Search (Endee-Inspired)
 
 This project implements a **semantic retrieval pipeline inspired by Endee vector database architecture**:
@@ -88,9 +87,9 @@ This project implements a **semantic retrieval pipeline inspired by Endee vector
 | Libraries | NumPy, Scikit-learn, Pillow |
 
 ---
-
 ## 📂 Project Structure
 
+```
 cataract-assistant/
 │
 ├── app.py
@@ -101,8 +100,7 @@ cataract-assistant/
 ├── README.md
 ├── temp/
 └── docs/
----
-
+```
 
 ---
 
