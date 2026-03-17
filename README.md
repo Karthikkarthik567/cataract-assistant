@@ -5,7 +5,7 @@
 [![AI](https://img.shields.io/badge/AI-YOLOv8-red?style=flat-square)]()
 [![Semantic Search](https://img.shields.io/badge/Semantic%20Search-Endee%20Inspired-orange?style=flat-square)]()
 
-> 🚀 **AI-powered cataract detection assistant** that combines **YOLOv8 deep learning** with a **semantic search pipeline inspired by Endee vector database** for intelligent medical Q&A.
+> 🚀 **AI-powered cataract detection assistant** combining **YOLOv8 deep learning** with a **semantic search pipeline inspired by Endee vector database** for intelligent medical Q&A.
 
 ---
 
@@ -16,7 +16,7 @@ The **AI Cataract Diagnosis Assistant** is an end-to-end AI application designed
 - 👁️ Early cataract screening  
 - 🧠 AI-powered medical Q&A  
 - 🏥 Patient awareness & education  
-- 💡 Telemedicine support systems  
+- 💡 Telemedicine support  
 
 Users can upload eye images, receive AI-based diagnosis, and ask natural language questions about cataracts.
 
@@ -24,39 +24,31 @@ Users can upload eye images, receive AI-based diagnosis, and ask natural languag
 
 ## ✨ Key Features
 
-### 🔍 1. Cataract Detection (Computer Vision)
+### 🔍 Cataract Detection
 - Upload eye images (JPG, PNG, JPEG)
 - Detect **Cataract vs Normal**
 - Confidence score prediction
 - Bounding box visualization
 
----
-
-### 🧠 2. Semantic Medical Q&A
-- Ask questions like:
-  - *What are symptoms of cataract?*
-  - *When should I consult a doctor?*
+### 🧠 Semantic Medical Q&A
+- Ask medical questions in natural language
 - Context-aware answers using semantic similarity
 
----
-
-### 📊 3. Visual Feedback
+### 📊 Visual Feedback
 - Annotated images with bounding boxes
-- Easy-to-understand UI for non-technical users
+- Clean and simple UI
 
----
-
-### 💡 4. Medical Guidance
+### 💡 Medical Guidance
 - Suggested next steps
-- Patient-friendly explanations
+- Easy-to-understand explanations
+
+### 🛡️ Fallback Knowledge System
+- Local medical data backup
+- Ensures reliable answers
 
 ---
 
-### 🛡️ 5. Fallback Knowledge System
-- Local medical knowledge backup
-- Ensures answers even if semantic match fails
-
----
+## 🏗️ System Architecture
 
 User Input (Image / Question)
         ↓
@@ -70,32 +62,38 @@ Streamlit Frontend
 Results + Recommendations
 ---
 
-## 🧠 Semantic Search (Endee-Inspired Design)
+
+---
+
+## 🧠 Semantic Search (Endee-Inspired)
 
 This project implements a **semantic retrieval pipeline inspired by Endee vector database architecture**:
 
 ### Workflow:
 1. Medical knowledge → converted into embeddings  
-2. User query → transformed into embedding  
-3. Cosine similarity → finds closest match  
-4. Best response returned  
+2. Query → converted into embedding  
+3. Cosine similarity → finds best match  
+4. Relevant answer returned  
 
-👉 This mimics **RAG (Retrieval-Augmented Generation)** systems used in production AI.
+👉 Simulates **RAG (Retrieval-Augmented Generation)** systems
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Category | Tools Used |
-|--------|-----------|
+| Category | Tools |
+|--------|------|
 | Language | Python 3.10+ |
 | UI | Streamlit |
-| AI Model | YOLOv8 (Ultralytics) |
+| AI Model | YOLOv8 |
 | NLP | Sentence Transformers |
 | Search | Cosine Similarity |
 | Libraries | NumPy, Scikit-learn, Pillow |
 
 ---
+
+## 📂 Project Structure
+
 
 cataract-assistant/
 │
@@ -111,23 +109,26 @@ cataract-assistant/
 
 ---
 
+
+---
+
 ## ⚡ Installation & Setup
 
 ```bash
-# 1. Clone repository
+# Clone repository
 git clone https://github.com/YOUR_USERNAME/cataract-assistant.git
 cd cataract-assistant
 
-# 2. Create virtual environment
+# Create virtual environment
 python -m venv venv
 
-# 3. Activate environment
+# Activate
 venv\Scripts\activate
 # or
 source venv/bin/activate
 
-# 4. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 5. Run application
-streamlit run app.py
+# Run app
+streamlit run app.pylit run app.py
