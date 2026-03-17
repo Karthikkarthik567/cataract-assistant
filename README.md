@@ -77,3 +77,5 @@ pip install -r requirements.txt
 # 4️⃣ Run the Streamlit app
 streamlit run app.py
 └─ docs/                      # Demo images, screenshots, GIFs
+
+
