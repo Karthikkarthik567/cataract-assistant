@@ -1,81 +1,142 @@
 # 👁️ AI Cataract Diagnosis Assistant
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square)](https://www.python.org/) 
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-success?style=flat-square)](https://streamlit.io/) 
-[![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](./LICENSE)
-[![Endee](https://img.shields.io/badge/VectorDB-Endee-orange?style=flat-square)](https://docs.endee.io/quick-start)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-success?style=flat-square)](https://streamlit.io/)
+[![AI](https://img.shields.io/badge/AI-YOLOv8-red?style=flat-square)]()
+[![Semantic Search](https://img.shields.io/badge/Semantic%20Search-Endee%20Inspired-orange?style=flat-square)]()
 
-> **AI-powered cataract detection assistant** combining **YOLOv8 object detection** and **Endee vector database** for semantic Q&A. Perfect for medical AI applications, patient education, and telemedicine tools.
-
----
-
-## 🚀 Project Overview
-
-The AI Cataract Diagnosis Assistant allows users to:
-
-- Upload eye images (JPG, JPEG, PNG) for **real-time cataract detection**.
-- Visualize **annotated results** with bounding boxes and confidence scores.
-- Receive **medical recommendations and actionable next steps**.
-- Ask **natural language questions** about cataracts using **Endee semantic search** for accurate, context-aware answers.
-
-**Why this project matters:**
-
-- Combines **Deep Learning + Vector Database** for AI-driven healthcare.
-- **Streamlit interface** ensures accessibility and ease of use.
-- Modular and extensible for **research or clinical applications**.
+> 🚀 **AI-powered cataract detection assistant** that combines **YOLOv8 deep learning** with a **semantic search pipeline inspired by Endee vector database** for intelligent medical Q&A.
 
 ---
 
-## 🏗 Features
+## 🎯 Project Overview
 
-| Feature | Description |
-|---------|-------------|
-| **Eye Image Diagnosis** | Detect cataract vs normal eye using YOLOv8. |
-| **Annotated Results** | Bounding boxes with confidence scores for visual feedback. |
-| **Medical Knowledge Retrieval** | Semantic search using Endee DB for patient queries. |
-| **Suggested Next Steps** | Practical guidance for eye care. |
-| **Advanced AI Q&A** | Free-text question answering powered by vector search. |
+The **AI Cataract Diagnosis Assistant** is an end-to-end AI application designed for:
+
+- 👁️ Early cataract screening  
+- 🧠 AI-powered medical Q&A  
+- 🏥 Patient awareness & education  
+- 💡 Telemedicine support systems  
+
+Users can upload eye images, receive AI-based diagnosis, and ask natural language questions about cataracts.
 
 ---
 
-## 🛠 Technology Stack
+## ✨ Key Features
 
-- **Python 3.10+** – Core language  
-- **Streamlit** – Web app UI  
-- **Ultralytics YOLOv8** – Deep learning detection  
-- **Pillow** – Image processing and annotation  
-- **Endee Vector Database** – Semantic search backend  
-- **NumPy, Scikit-learn, Sentence Transformers** – Data processing & embeddings  
+### 🔍 1. Cataract Detection (Computer Vision)
+- Upload eye images (JPG, PNG, JPEG)
+- Detect **Cataract vs Normal**
+- Confidence score prediction
+- Bounding box visualization
+
+---
+
+### 🧠 2. Semantic Medical Q&A
+- Ask questions like:
+  - *What are symptoms of cataract?*
+  - *When should I consult a doctor?*
+- Context-aware answers using semantic similarity
+
+---
+
+### 📊 3. Visual Feedback
+- Annotated images with bounding boxes
+- Easy-to-understand UI for non-technical users
+
+---
+
+### 💡 4. Medical Guidance
+- Suggested next steps
+- Patient-friendly explanations
+
+---
+
+### 🛡️ 5. Fallback Knowledge System
+- Local medical knowledge backup
+- Ensures answers even if semantic match fails
+
+---
+
+## 🏗️ System Architecture
+
+
+User Input (Image / Question)
+↓
+Streamlit Web Interface
+↓
+┌──────────────────────┬─────────────────────────┐
+│ YOLOv8 Model │ Semantic Search Engine │
+│ (Image Detection) │ (Embeddings + Similarity)│
+└──────────────────────┴─────────────────────────┘
+↓
+Diagnosis + AI Response + Recommendations
+
+
+---
+
+## 🧠 Semantic Search (Endee-Inspired Design)
+
+This project implements a **semantic retrieval pipeline inspired by Endee vector database architecture**:
+
+### Workflow:
+1. Medical knowledge → converted into embeddings  
+2. User query → transformed into embedding  
+3. Cosine similarity → finds closest match  
+4. Best response returned  
+
+👉 This mimics **RAG (Retrieval-Augmented Generation)** systems used in production AI.
+
+---
+
+## 🛠️ Technology Stack
+
+| Category | Tools Used |
+|--------|-----------|
+| Language | Python 3.10+ |
+| UI | Streamlit |
+| AI Model | YOLOv8 (Ultralytics) |
+| NLP | Sentence Transformers |
+| Search | Cosine Similarity |
+| Libraries | NumPy, Scikit-learn, Pillow |
 
 ---
 
 ## 📂 Project Structure
 
-```text
-AI-Cataract-Assistant/
-├─ app.py                     # Main Streamlit app
-├─ model_utils.py             # Model loading & inference utilities
-├─ vector_db/endee_setup.py   # Endee semantic search integration
-├─ requirements.txt           # Dependencies
-├─ medical_data.txt           # Medical knowledge fallback
-├─ temp/                      # Temporary images (uploads/annotations)
-├─ README.md                  # Project documentation
+
+cataract-assistant/
+│
+├── app.py # Streamlit UI & app logic
+├── model_utils.py # YOLO model utilities
+├── vector_db/
+│ └── endee_setup.py # Semantic search module
+├── medical_data.txt # Medical knowledge base
+├── requirements.txt # Dependencies
+├── temp/ # Temporary images
+├── docs/ # Screenshots / demo
+└── README.md
 
 
-# 1️⃣ Create a virtual environment
+---
+
+## ⚡ Installation & Setup
+
+```bash
+# 1. Clone repository
+git clone https://github.com/YOUR_USERNAME/cataract-assistant.git
+cd cataract-assistant
+
+# 2. Create virtual environment
 python -m venv venv
 
-# 2️⃣ Activate the virtual environment
-# Linux / Mac
-source venv/bin/activate
-# Windows
+# 3. Activate environment
 venv\Scripts\activate
+# or
+source venv/bin/activate
 
-# 3️⃣ Install project dependencies
+# 4. Install dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Run the Streamlit app
+# 5. Run application
 streamlit run app.py
-└─ docs/                      # Demo images, screenshots, GIFs
-
-
