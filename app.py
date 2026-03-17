@@ -3,7 +3,7 @@ import uuid
 import streamlit as st
 from PIL import Image
 from model_utils import load_model, run_inference, draw_boxes_on_image
-from vector_db.endee_setup import search  # Endee semantic search
+from endee_setup import search
 
 # ============================
 # Streamlit Page Settings
