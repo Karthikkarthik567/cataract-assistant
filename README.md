@@ -10,6 +10,9 @@
 This project integrates Endee-inspired semantic search concepts and follows vector database retrieval workflows similar to Endee.
 ---
 
+## 🚀 Live Demo
+👉 https://cataract-assistant-k2yfdqxprkg8rbbdtpjw7s.streamlit.app/
+
 ## 🎯 Project Overview
 
 The **AI Cataract Diagnosis Assistant** is an end-to-end AI application designed for:
