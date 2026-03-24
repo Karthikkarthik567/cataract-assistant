@@ -7,4 +7,3 @@ pillow
 opencv-python-headless
 torch
 torchvision
-opencv-python==0
