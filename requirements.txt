@@ -1,9 +1,6 @@
 streamlit
-pillow
-numpy>=1.26
-opencv-python-headless
-torch>=2.2
-torchvision
-ultralytics>=8.2.0
+ultralytics
+sentence-transformers
 scikit-learn
-pandas
+numpy
+pillow
