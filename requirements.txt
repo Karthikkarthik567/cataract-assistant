@@ -4,3 +4,6 @@ sentence-transformers
 scikit-learn
 numpy
 pillow
+opencv-python-headless
+torch
+torchvision
